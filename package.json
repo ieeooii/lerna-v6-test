@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "run-p --print-label package:*",
+    "build": "lerna run --parallel build"
+  },
+  "devDependencies": {
+    "lerna": "^6.6.2"
+  },
+  "packageManager": "yarn@3.5.1"
+}
